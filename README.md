@@ -1,2 +1,2 @@
-# EldenRing-Rocnikovyprojekt
+# Rocnikovy-projekt-elden-ring
 Ročníkový projekt

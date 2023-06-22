@@ -1,0 +1,197 @@
+body {
+    background-color: #000;
+    color: #FFF;
+    font-family: Arial, sans-serif;
+  }
+  .center{
+    text-align: center;
+    color: white;
+  }
+
+  .navbar {
+    background-color: #d0b472;
+  }
+
+  .navbar-brand {
+    color: #d0b472;
+    font-weight: bold;
+  }
+
+  .nav-link {
+    font-size: 125%;
+    color:  #d0b472;
+  }
+
+  h1, h2, p {
+    color: #d0b472;
+  }
+
+  .hero-image {
+    background-image:url(https://cdn.wccftech.com/wp-content/uploads/2021/06/ER_KEY-ART-scaled-e1623411764381-2060x1059.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-logo {
+    position: absolute;
+    top: 8px;
+    left: 220px;
+    width: 150px;
+  }
+  .hero-text {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    color: #D4AF37;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .scroll-down-button {
+    font-size:150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    color: #d0b472;
+    cursor: pointer;
+  }
+
+  .scroll-down-icon {
+    margin-left: 5px;
+  }
+
+  .container-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+  }
+
+  .image {
+    flex: 1;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .text {
+    flex: 1;
+    max-width: 50%;
+    padding: 0 30px;
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 30px;
+    
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .velke{
+    font-size: 50px;
+    padding-top: 70px;
+    text-align: center;
+  }
+  .polovelke{
+    font-size: 40px;
+    
+    text-align: center;
+    color: #e4b956;
+  }
+  h1{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 70px;
+  }
+  .pad{
+    padding-top: 200px;
+  }
+  .center{
+    text-align: center;
+  }
+  .ahoj{
+    font-size: 30px;
+    color: #d0b472;
+    padding-bottom: 30px;
+    text-decoration: none;
+  }
+  .w{
+    color: white;
+  }
+  
+  .container1 {
+    margin-top: 50px;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+  .container4 {
+    text-align: center;
+    padding-bottom: 40px;
+    align-items: center; 
+    
+   
+  }
+  
+  .button2 {
+    display: inline-block;
+    width: 400px;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .button2:hover {
+    opacity: 0.8;
+  }
+  .odsa{
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 150px;
+    
+  }
+  .textikk{
+    font-size: 50px;
+    -webkit-text-stroke: 1.5px black;
+    color: #d0b472;
+    align-items: center;
+    
+  }
+  .ks{
+    -webkit-text-stroke: 1px black;
+    font-size: 40px;
+  }
+  

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galerie" />
+  <meta name="author" content="TomasHoles" />
+  <title>Interaktivní galerie</title>
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../styly/galerie.css">
+  
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="../svethry/index.html">Svět hry</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="../pribeh/index.html">Příběh</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../vyvojari/index.html">Vývojáři</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../galerie/index.html">Galerie</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../quiz/index.html">Kvíz</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="hero-image">
+        <a href="../index.html">
+          <img src="../img/eldenring_new.png" alt="Logo" class="hero-logo">
+        </a>
+        <div class="hero-text">
+          <h1 class="velke lol">Galerie</h1>
+        </div>
+      </div>
+      <div class="button-container">
+        <h2 class="scroll-down-button" onclick="scrollToBottom()">
+          <a data-aos="fade-up" data-aos-delay="200" href="#zacatek" class="ahoj ks">Dozvědět se více</a>
+          <i class="fas fa-arrow-down scroll-down-icon"></i>
+        </h2>
+      </div>
+      <script>
+        function scrollToBottom() {
+          window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: 'smooth'
+          });
+        }
+      </script>
+  <br>
+  <br>
+  <div class="container3">
+  <div class="row">
+    <div class="col-lg-4 col-md-6 center">
+      <a href="../lightbox/elden-beast-boss-elden-ring-wiki-guide.webp" data-lightbox="gallery" data-title="Popisek obrázku 1">
+        <img src="../lightbox/elden-beast-boss-elden-ring-wiki-guide.webp" alt="Hlavní boss" class="img-fluid">
+      </a>
+      <h3>Hlavní boss </h3>
+    </div>
+    <div class="col-lg-4 col-md-6 center">
+      <a href="../lightbox/elden-ring-connection-error.jpg" data-lightbox="gallery" data-title="Obrazek ">
+        <img src="../lightbox/elden-ring-connection-error.jpg" alt="Ukázka světa" class="img-fluid">
+        
+      </a>
+      <h3>Ukázka světa </h3>
+    </div>
+    <div class="col-lg-4 col-md-6 center">
+      <a href="../lightbox/Elden-Ring-Rykard-Lord-of-Blasphemy-Boss-Fight-4K.jpg" data-lightbox="gallery" data-title="Popisek obrázku 3">
+        <img src="../lightbox/Elden-Ring-Rykard-Lord-of-Blasphemy-Boss-Fight-4K.jpg" alt="Rykard, Lord Of Blasphemy" class="img-fluid">
+      </a>
+      <h3>Rykard, Lord Of Blasphemy</h3>
+    </div>
+  </div>
+  
+</div>
+<div class="container3">
+  <div class="row">
+    <div class="col-lg-4 col-md-6 center">
+      <a href="../lightbox/Elden-Ring-Astel-Boss-Fight.avif" data-lightbox="gallery" data-title="Popisek obrázku 1">
+        <img src="../lightbox/Elden-Ring-Astel-Boss-Fight.avif" alt="Astel " class="img-fluid">
+      </a>
+      <h3>Astel </h3>
+    </div>
+    <div class="col-lg-4 col-md-6 center">
+      <a href="../lightbox/elden_ring_bosses_1.webp" data-lightbox="gallery" data-title="Obrazek ">
+        <img src="../lightbox/elden_ring_bosses_1.webp" alt="Radhan" class="img-fluid">
+        
+      </a>
+      <h3>Radhan </h3>
+    </div>
+    <div class="col-lg-4 col-md-6 center">
+      <a href="../lightbox/fire_giant_bosses_elden_ring_wik.jpg" data-lightbox="gallery" data-title="Popisek obrázku 3">
+        <img src="../lightbox/fire_giant_bosses_elden_ring_wik.jpg" alt="Fire Giant" class="img-fluid">
+      </a>
+      <h3>Fire Giant</h3>
+    </div>
+  </div>
+  
+</div>
+<div class="container3">
+  <div class="row">
+    <div class="col-lg-4 col-md-6 center">
+      <a href="../lightbox/margit-the-fell-omen.jpg" data-lightbox="gallery" data-title="Popisek obrázku 1">
+        <img src="../lightbox/margit-the-fell-omen.jpg" alt="První boss Margit" class="img-fluid">
+      </a>
+      <h3>První boss Margit </h3>
+    </div>
+    <div class="col-lg-4 col-md-6 center">
+      <a href="../lightbox/maxresdefault.jpg" data-lightbox="gallery" data-title="Obrazek ">
+        <img src="../lightbox/maxresdefault.jpg" alt="Radagon" class="img-fluid">
+        
+      </a>
+      <h3>Radagon </h3>
+    </div>
+    <div class="col-lg-4 col-md-6 center">
+      <a href="../lightbox/l-intro-1646766043.jpg" data-lightbox="gallery" data-title="Popisek obrázku 3">
+        <img src="../lightbox/l-intro-1646766043.jpg" alt="Ranni" class="img-fluid">
+      </a>
+      <h3>Ranni</h3>
+    </div>
+  </div>
+  
+</div>
+<footer class="nvvv">
+  <hr>
+  <p class="center">&copy; 2022 - Autor: <i> Tomáš Holeš</i>, <b>IT1</b>&#xAE;</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</body>
+</html>

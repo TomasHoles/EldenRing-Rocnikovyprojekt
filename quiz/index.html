@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<htmll lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Quiz" />
+  <meta name="author" content="TomasHoles" />
+  <title>Testovací stránka</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../styly/quiz.css">
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../svethry/index.html">Svět hry</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pribeh/index.html">Příběh</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../vyvojari/index.html">Vyvojáři</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../galerie/index.html">Galerie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../quiz/index.html">Kvíz</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="hero-image">
+    <a href="../index.html">
+      <img src="../img/eldenring_new.png" alt="Logo" class="hero-logo">
+    </a>
+    <div class="hero-text">
+      <h1 class="velke lol">Kvíz</h1>
+    </div>
+  </div>
+  <div class="button-container">
+    <h2 class="scroll-down-button" onclick="scrollToBottom()">
+      <a data-aos="fade-up" data-aos-delay="200" href="#zacatek" class="ahoj ks">Dozvědět se více</a>
+      <i class="fas fa-arrow-down scroll-down-icon"></i>
+    </h2>
+  </div>
+  <script>
+    function scrollToBottom() {
+      window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+          <div class="hero-text">
+  <div class="container pad" id="zacatek">
+    <h1>Testovací stránka</h1>
+    <div class="question">
+      <h3>Otázka 1:</h3>
+      <p class="w">Jake studio udělalo Elden Ring?</p>
+      <input type="text" id="answer1">
+      <p id="correctAnswer1" style="display: none; margin-top: 10px; font-weight: bold;"></p>
+    </div>
+    <div class="question">
+      <h3>Otázka 2:</h3>
+      <p class="w">Jaký je žánr hra Elden Ring?</p>
+      <input type="text" id="answer2">
+      <p id="correctAnswer2" style="display: none; margin-top: 10px; font-weight: bold;"></p>
+    </div>
+    <div class="question">
+      <h3>Otázka 3:</h3>
+      <p class="w">Který rok se hra vydala?</p>
+      <input type="text" id="answer3">
+      <p id="correctAnswer3" style="display: none; margin-top: 10px; font-weight: bold;"></p>
+    </div>
+    <div class="question">
+      <h3>Otázka 4:</h3>
+      <p class="w">Kolik ma mapa Elden Ringu částí?</p>
+      <input type="text" id="answer4">
+      <p id="correctAnswer4" style="display: none; margin-top: 10px; font-weight: bold;"></p>
+    </div>
+    <div class="question">
+      <h3>Otázka 5:</h3>
+      <p class="w">Jak se jmenuje kůň na kterém hráč jezdí?</p>
+      <input type="text" id="answer5">
+      <p id="correctAnswer5" style="display: none; margin-top: 10px; font-weight: bold;"></p>
+    </div>
+    <button class="btn btn-primary blue" onclick="checkAnswers()">Zkontrolovat</button>
+    <div id="result" style="margin-top: 20px;"></div>
+  </div>
+  </div>
+  
+  <script>
+    function checkAnswers() {
+      var answer1 = document.getElementById("answer1").value.toLowerCase();
+      var answer2 = document.getElementById("answer2").value.toLowerCase();
+      var answer3 = document.getElementById("answer3").value.toLowerCase();
+      var answer4 = document.getElementById("answer4").value.toLowerCase();
+      var answer5 = document.getElementById("answer5").value.toLowerCase();
+      var correctAnswers = 0;
+      var result = "";
+
+      if (answer1 === "fromsoftware") {
+        correctAnswers++;
+        document.getElementById("answer1").classList.add("correct");
+      } else {
+        document.getElementById("answer1").classList.add("incorrect");
+        document.getElementById("correctAnswer1").style.display = "block";
+        document.getElementById("correctAnswer1").textContent = "Správná odpověď: FromSoftware";
+      }
+
+      if (answer2 === "rpg") {
+        correctAnswers++;
+        document.getElementById("answer2").classList.add("correct");
+      } else {
+        document.getElementById("answer2").classList.add("incorrect");
+        document.getElementById("correctAnswer2").style.display = "block";
+        document.getElementById("correctAnswer2").textContent = "Správná odpověď: RPG";
+      }
+
+      if (answer3 === "2022") {
+        correctAnswers++;
+        document.getElementById("answer3").classList.add("correct");
+      } else {
+        document.getElementById("answer3").classList.add("incorrect");
+        document.getElementById("correctAnswer3").style.display = "block";
+        document.getElementById("correctAnswer3").textContent = "Správná odpověď: 2022";
+      }
+
+      if (answer4 === "12") {
+        correctAnswers++;
+        document.getElementById("answer4").classList.add("correct");
+      } else {
+        document.getElementById("answer4").classList.add("incorrect");
+        document.getElementById("correctAnswer4").style.display = "block";
+        document.getElementById("correctAnswer4").textContent = "Správná odpověď: 12";
+      }
+
+      if (answer5 === "torrent") {
+        correctAnswers++;
+        document.getElementById("answer5").classList.add("correct");
+      } else {
+        document.getElementById("answer5").classList.add("incorrect");
+        document.getElementById("correctAnswer5").style.display = "block";
+        document.getElementById("correctAnswer5").textContent = "Správná odpověď: Torrent";
+      }
+
+      result = "Počet správných odpovědí: " + correctAnswers;
+      document.getElementById("result").innerHTML = result;
+    }
+  </script>
+
+<footer>
+  <hr>
+  <p class="center">&copy; 2022 - Autor: <i> Tomáš Holeš</i>, <b>IT1</b>&#xAE;</p>
+</footer>
+</body>
+</html>
+
